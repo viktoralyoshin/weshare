@@ -20,11 +20,11 @@ const page = () => {
   return (
     <div className="flex flex-col space-y-6 mx-8">
       <h1 className="text-4xl font-semibold">Лента</h1>
-      <div className="flex items-center space-x-4 p-4 rounded-lg bg-foreground/5 border border-foreground-300 dark:border-foreground-50">
+      <div className="flex items-center space-x-4 md:p-4 rounded-lg md:bg-foreground/5 md:border border-foreground-300 dark:border-foreground-50">
         <Avatar radius="lg" />
         <NewPost />
       </div>
-      <div className="flex flex-col space-y-4 items-start">
+      <div className="flex flex-col md:space-y-6 space-y-4 items-start">
         {posts.map((post) => (
           <Post post={post} />
         ))}

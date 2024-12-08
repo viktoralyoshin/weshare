@@ -5,7 +5,7 @@ import React from "react";
 
 const Post = ({ post }: { post: IPost }) => {
   return (
-    <div className="flex flex-col w-full p-4 space-y-4 bg-foreground/5 border rounded-xl dark:border-foreground-50 border-foreground-300">
+    <div className="flex flex-col w-full md:p-4 space-y-4 md:bg-foreground/5 md:border rounded-xl dark:border-foreground-50 border-foreground-300">
       <div className="flex gap-2 items-center justify-between">
         <User
           avatarProps={{
