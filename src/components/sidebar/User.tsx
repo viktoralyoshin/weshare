@@ -17,11 +17,11 @@ const UserComponent = () => {
       <div className="flex space-x-4">
         <p className="flex flex-col items-center">
           2,3k
-          <span className="text-foreground/70">Follower</span>
+          <span className="text-foreground/70">Подписчики</span>
         </p>
         <p className="flex flex-col items-center">
           213
-          <span className="text-foreground/70">Following</span>
+          <span className="text-foreground/70">Подписок</span>
         </p>
       </div>
     </div>

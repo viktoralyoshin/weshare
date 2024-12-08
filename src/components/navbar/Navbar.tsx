@@ -15,6 +15,7 @@ const Navbar = () => {
           </div>
           <Input
             placeholder="Поиск"
+            isClearable
             className="max-w-lg ml-4 md:flex hidden"
             startContent={<Search color="#767676" size={16} />}
           ></Input>

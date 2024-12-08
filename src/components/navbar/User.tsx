@@ -26,7 +26,6 @@ const UserComponent = () => {
           <DropdownItem key="settings" startContent={<Settings size={18} />}>
             Настройки
           </DropdownItem>
-          <DropdownItem></DropdownItem>
         </DropdownSection>
         <DropdownSection>
           <DropdownItem
