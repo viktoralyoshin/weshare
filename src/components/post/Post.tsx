@@ -12,7 +12,7 @@ const Post = ({ post }: { post: IPost }) => {
             radius: "lg",
             size: "sm",
           }}
-          name="Jacob Monarch"
+          name="1rowvy"
         />
         <p className="text-sm text-foreground/70">
           {new Intl.DateTimeFormat("ru", {

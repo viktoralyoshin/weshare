@@ -8,11 +8,9 @@ const UserComponent = () => {
           radius: "lg",
         }}
         description={
-          <Link href="#" size="sm">
-            @jacobmnarch
-          </Link>
+          <Link href="/" size="sm">@1rowvy</Link>
         }
-        name="Jacob Monarch"
+        name="1rowvy"
       />
       <div className="flex space-x-4">
         <p className="flex flex-col items-center">

@@ -1,5 +1,5 @@
-import NewPost from "@/components/NewPost";
-import Post from "@/components/Post";
+import NewPost from "@/components/post/NewPost";
+import Post from "@/components/post/Post";
 import { IPost } from "@/types/post.types";
 import { Avatar } from "@nextui-org/react";
 
@@ -11,7 +11,7 @@ const page = () => {
       createdAt: new Date(),
     },
     {
-      id: "123",
+      id: "12342",
       content: "Привет, мир!",
       createdAt: new Date(),
     },
@@ -26,7 +26,7 @@ const page = () => {
       </div>
       <div className="flex flex-col md:space-y-6 space-y-4 items-start">
         {posts.map((post) => (
-          <Post post={post} />
+          <Post post={post} key={post.id} />
         ))}
       </div>
     </div>

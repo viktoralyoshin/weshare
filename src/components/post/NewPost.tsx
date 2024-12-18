@@ -13,7 +13,7 @@ import {
   Textarea,
   useDisclosure,
 } from "@nextui-org/react";
-import { PlusIcon, MailIcon, LockIcon } from "lucide-react";
+import { PlusIcon } from "lucide-react";
 
 const NewPost = () => {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
