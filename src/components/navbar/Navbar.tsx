@@ -13,20 +13,9 @@ const Navbar = () => {
             <Image src="/logo.svg" alt="logo" width={35} height={35} />
             <h1 className="text-xl font-semibold md:flex hidden">WeShare</h1>
           </div>
-          <Input
-            placeholder="Поиск"
-            isClearable
-            className="max-w-lg ml-4 md:flex hidden"
-            startContent={<Search color="#767676" size={16} />}
-          ></Input>
         </div>
         <div className="flex items-center space-x-4">
           <ThemeSwitcher />
-          <Badge color="primary" content=" " shape="circle">
-            <Button isIconOnly radius="full" variant="light">
-              <Bell size={20} />
-            </Button>
-          </Badge>
           <UserComponent />
         </div>
       </div>

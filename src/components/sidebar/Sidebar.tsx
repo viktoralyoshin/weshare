@@ -21,8 +21,10 @@ const Sidebar = () => {
 
             return (
               <Link
-                href={`/home${route.value}`}
-                className={`${isActive ? "bg-primary text-white" : "hover:bg-foreground/5"} flex gap-2 items-center p-2 px-3 rounded-lg ease-in-out duration-200`}
+                href={`${route.value}`}
+                className={`${
+                  isActive ? "bg-primary text-white" : "hover:bg-foreground/5"
+                } flex gap-2 items-center p-2 px-3 rounded-lg ease-in-out duration-200`}
                 key={route.id}
               >
                 <Icon name={route.icon} size={18} />

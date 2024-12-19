@@ -5,7 +5,7 @@ export async function middleware(request: NextRequest, response: NextResponse) {
   const { url, cookies } = request;
 
   const publicRoutes = ["/"];
-  const protectedRoutes = ["/feed"];
+  const protectedRoutes = ["/feed", "/user", "/chats"];
 
   const path = request.nextUrl.pathname;
 

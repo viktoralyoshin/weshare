@@ -9,6 +9,7 @@ import { useState } from "react";
 import { useMutation } from "@tanstack/react-query";
 import { authService } from "@/services/auth.service";
 import { useRouter } from "next/navigation";
+import { useAuthStore } from "@/stores/auth.store";
 
 export enum EnumAuthType {
   login = "login",
@@ -62,11 +63,14 @@ const AuthForm = ({ type }: { type: EnumAuthType }) => {
     },
   });
 
+  const setUser = useAuthStore((state) => state.setUser);
+
   const { mutate, isPending } = useMutation({
     mutationKey: ["auth"],
     mutationFn: (data: z.infer<typeof formSchema>) =>
       authService.main(type, data),
-    onSuccess: () => {
+    onSuccess: (response) => {
+      setUser(response.data.user);
       router.push("/feed");
     },
   });
